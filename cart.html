@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart – TeeArt</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">TeeArt</a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Your Cart</h2>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Cart items will be populated here -->
+      </tbody>
+    </table>
+    <div class="cart-summary">
+      <div>Total: <span id="summary-total">$0.00</span></div>
+      <button class="checkout-btn" id="checkout-btn">Checkout</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> TeeArt. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('checkout-btn').addEventListener('click', function() {
+      alert('Thank you for your purchase! This site is a demo, so no payment will be processed.');
+      // Clear cart after checkout
+      localStorage.removeItem('cart');
+      location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>

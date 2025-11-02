@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeeArt – Premium T‑Shirt Designs</title>
+  <!-- Google Font for a sleek, modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">TeeArt</a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Elevate Your Style</h1>
+      <p>Discover artfully designed premium t‑shirts that make a statement.</p>
+      <a href="#products" class="btn-primary">Shop Now</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="products" class="products-section">
+      <h2>Featured Designs</h2>
+      <div class="product-grid" id="product-grid">
+        <!-- Products will be injected here by JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> TeeArt. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

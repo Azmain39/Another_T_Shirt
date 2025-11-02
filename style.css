@@ -1,0 +1,257 @@
+/*
+ * Global Styles
+ * This stylesheet gives the site a clean, modern look with a touch of elegance.
+ */
+
+/* Reset some default margins and paddings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #2d2d2d;
+  background-color: #f9f9fb;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #1e1e1e;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.site-nav a {
+  font-weight: 500;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.site-nav a:hover {
+  color: #1e1e1e;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, #f2f4f7 0%, #ffffff 100%);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #1e1e1e;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #ff6636;
+  color: #ffffff;
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #e65527;
+}
+
+/* Products section */
+.products-section {
+  padding: 60px 0;
+}
+
+.products-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #1e1e1e;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  height: 280px;
+  object-fit: cover;
+}
+
+.product-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.product-name {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #1e1e1e;
+}
+
+.product-price {
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #ff6636;
+  font-size: 1.1rem;
+}
+
+.product-card button {
+  background-color: #1e88e5;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #1565c0;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e6e6e6;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Cart Page */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.cart-table th {
+  background-color: #f2f4f7;
+  font-weight: 600;
+}
+
+.cart-table td img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-controls button {
+  background-color: #e6e6e6;
+  border: none;
+  padding: 6px 10px;
+  margin: 0 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.quantity-controls button:hover {
+  background-color: #d4d4d4;
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.1rem;
+}
+
+.checkout-btn {
+  background-color: #43a047;
+  color: #ffffff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkout-btn:hover {
+  background-color: #388e3c;
+}
